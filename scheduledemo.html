@@ -104,16 +104,15 @@
   <div class="content">
     <div class="container">
       <div class="wrap">
-
         <h1 class="smaller margin-bottom-2 ae-1">Schedule a demo for Tassel Evaluate or Tassel Pathway.</h1>
         <p class="large margin-bottom-4 ae-2"><span class="opacity-8">We'll talk to you soon!</span></p>
         <div class="form-55 fix-5-12">
           <div class="pad padding-top-2 shadow left selected ae-3">
-            <form action="ajax-email.php" id="contact-form" method="post" class="slides-form wide" data-ajax-form="true">
+            <form id="contact-form" method="post" class="slides-form wide" name="contact" method="POST" data-netlify="true">
               <ul class="flex noSpaces">
                 <li class="col-6-12 form-55-input-1">
                   <div class="label ae-5"><label class="left opacity-5" for="name55">Your name</label></div>
-                  <input class="rounded wide ae-6" id="name55" type="name" name="name" placeholder="Name" required>
+                  <input class="rounded wide ae-6" id="name55" type="text" name="name" placeholder="Name" required>
                 </li>
                 <li class="col-6-12 form-55-input-2">
                   <div class="label ae-5"><label class="left opacity-5" for="email55">Email address</label></div>
@@ -124,13 +123,37 @@
               <textarea class="rounded left wide ae-9" id="message55" type="text" name="message" placeholder="What product are you interested in and how can we help?" required></textarea>
               <button type="submit" class="button wide sendMessageButton rounded ae-10 cropBottom margin-top-2" data-success-text="Done!" data-success-class="message-sent" name="button">Send message</button>
             </form>
+
+
+                     <!-- <form name="contact" method="POST" data-netlify="true">
+              <p>
+                <label>Your Name: <input type="text" name="name" /></label>   
+              </p>
+              <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+              </p>
+              <p>
+                <label>Your Role: <select name="role[]" multiple>
+                  <option value="leader">Leader</option>
+                  <option value="follower">Follower</option>
+                </select></label>
+              </p>
+              <p>
+                <label>Message: <textarea name="message"></textarea></label>
+              </p>
+              <p>
+                <button type="submit">Send</button>
+              </p>
+            </form> -->
+
+
+
           </div>
         </div>
         
       </div>
     </div>
-  </div>  
-  
+  </div>
 </section>
 
 <!-- jQuery 3.4.1 -->
